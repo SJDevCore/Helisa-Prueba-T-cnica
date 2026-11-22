@@ -1,15 +1,46 @@
+@import "./presentation/styles/variables.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
-  font-family: system-ui, sans-serif;
+  font-family: var(--fuente);
   line-height: 1.5;
-  color-scheme: light dark;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  color-scheme: light;
 }
 
 body {
   margin: 0;
 }
 
-main {
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 2px;
 }

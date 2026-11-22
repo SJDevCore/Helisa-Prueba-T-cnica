@@ -1,0 +1,88 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-4);
+}
+
+.titulo {
+  font-size: 1.0625rem;
+}
+
+.contexto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-2);
+  padding: var(--espacio-2) var(--espacio-3);
+  border-radius: var(--radio-sm);
+  background: var(--color-primario-suave);
+  color: var(--color-primario-hover);
+  font-size: var(--texto-sm);
+}
+
+.contexto button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: var(--texto-xs);
+  text-decoration: underline;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-1);
+}
+
+.etiqueta {
+  font-size: var(--texto-sm);
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: var(--espacio-2) var(--espacio-3);
+  border: 1px solid var(--color-borde-fuerte);
+  border-radius: var(--radio-sm);
+  background: var(--color-superficie);
+}
+
+.input:focus-visible {
+  outline-offset: 0;
+  border-color: var(--color-primario);
+}
+
+.inputCodigo {
+  font-family: var(--fuente-mono);
+  letter-spacing: 0.05em;
+}
+
+.invalido {
+  border-color: var(--color-peligro);
+  background: var(--color-peligro-fondo);
+}
+
+.ayuda {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-xs);
+}
+
+.errorCampo {
+  color: var(--color-peligro);
+  font-size: var(--texto-xs);
+  font-weight: 500;
+}
+
+.exito {
+  padding: var(--espacio-2) var(--espacio-3);
+  border-radius: var(--radio-sm);
+  background: var(--color-exito-fondo);
+  color: var(--color-exito);
+  font-size: var(--texto-sm);
+}
+
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+}
